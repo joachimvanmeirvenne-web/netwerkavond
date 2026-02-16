@@ -1,0 +1,11 @@
+{
+  "name": "netwerkavond",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-native event registration webapp",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check server.js"
+  }
+}

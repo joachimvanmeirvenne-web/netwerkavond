@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netwerkavond inschrijving</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>Inschrijven voor de netwerkavond</h1>
+        <p class="helper">Geen login nodig. Vul je gegevens in en schrijf je direct in.</p>
+
+        <form id="registration-form">
+          <div class="grid two">
+            <label>Naam<input required name="fullName" type="text" /></label>
+            <label>E-mail<input required name="email" type="email" /></label>
+          </div>
+
+          <div class="grid two">
+            <label>GSM<input required name="phone" type="tel" /></label>
+            <label>Richting<input required name="studyProgram" type="text" /></label>
+          </div>
+
+          <div class="grid two">
+            <label>Jaar<input required name="studyYear" type="number" min="1" max="10" /></label>
+            <label>Stad<input required name="studyCity" type="text" /></label>
+          </div>
+
+          <label>Extra informatie (optioneel)
+            <textarea name="extraInfo" placeholder="Vertel ons alles wat relevant is..."></textarea>
+          </label>
+
+          <button type="submit">Inschrijven</button>
+          <p id="status" class="status hidden"></p>
+        </form>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
